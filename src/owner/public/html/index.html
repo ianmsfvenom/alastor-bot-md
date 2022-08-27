@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel do Proprietário</title>
+  <link rel="shortcut icon" href="https://i.ibb.co/7bKybgS/251938352-5253453644667933-5723430082133919058-n.jpg" type="image/x-icon">
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="layer"></div>
+<a class="skip-link sr-only" href="#skip-target">Skip to content</a>
+<div class="page-flex">
+  <aside class="sidebar">
+    <div class="sidebar-start">
+        <div class="sidebar-head">
+            <a href="/" class="logo-wrapper" title="Home">
+                <span class="sr-only">Home</span>
+                <img src="https://i.ibb.co/7bKybgS/251938352-5253453644667933-5723430082133919058-n.jpg" width="50px" height="50px" style="margin-right: 10px; border-radius:50%;">
+                <div class="logo-text">
+                    <span class="logo-title">Painel do</span>
+                    <span class="logo-subtitle">Proprietário</span>
+                </div>
+
+            </a>
+            <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
+                <span class="sr-only">Toggle menu</span>
+                <span class="icon menu-toggle" aria-hidden="true"></span>
+            </button>
+        </div>
+        <div class="sidebar-body">
+          sidebar-menu
+        </div>
+    </div>
+    <div class="sidebar-footer">
+        <a href="##" class="sidebar-user">
+            <span class="sidebar-user-img">
+                <picture><source id="profile_pic" srcset="img/avatar/avatar-illustrated-01.webp" type="image/webp"><img src="img/avatar/avatar-illustrated-01.png" alt="User name"></picture>
+            </span>
+            <div class="sidebar-user-info">
+                <span class="sidebar-user__title"></span>
+                <span class="sidebar-user__subtitle"></span>
+            </div>
+        </a>
+    </div>
+</aside>
+  <div class="main-wrapper">
+    <nav class="main-nav--bg">
+  <div class="container main-nav">
+    <div class="main-nav-start">
+    </div>
+    <div class="main-nav-end">
+      <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
+        <span class="sr-only">Toggle menu</span>
+        <span class="icon menu-toggle--gray" aria-hidden="true"></span>
+      </button>
+      <button class="theme-switcher gray-circle-btn" type="button" title="Switch theme">
+        <span class="sr-only">Switch theme</span>
+        <i class="sun-icon" data-feather="sun" aria-hidden="true"></i>
+        <i class="moon-icon" data-feather="moon" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+    <!-- ! Main -->
+    <main class="main users chart-page" id="skip-target">
+      <div class="container">
+        <h2 class="main-title">Bem-vindo ao Painel do Proprietário</h2>
+        <div class="row stat-cards">
+          <div class="col-md-6 col-xl-3">
+            <article class="stat-cards-item">
+              <div class="stat-cards-icon primary">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M12.02 2C6.21 2 2 6.74 2 12c0 1.68.49 3.41 1.35 4.99.16.26.18.59.07.9l-.67 2.24c-.15.54.31.94.82.78l2.02-.6c.55-.18.98.05 1.491.36 1.46.86 3.279 1.3 4.919 1.3 4.96 0 10-3.83 10-10C22 6.65 17.7 2 12.02 2z"/><path d="M11.98 13.29c-.71-.01-1.28-.58-1.28-1.29 0-.7.58-1.28 1.28-1.27.71 0 1.28.57 1.28 1.28 0 .7-.57 1.28-1.28 1.28zm-4.61 0c-.7 0-1.28-.58-1.28-1.28 0-.71.57-1.28 1.28-1.28.71 0 1.28.57 1.28 1.28 0 .7-.57 1.27-1.28 1.28zm7.94-1.28c0 .7.57 1.28 1.28 1.28.71 0 1.28-.58 1.28-1.28 0-.71-.57-1.28-1.28-1.28-.71 0-1.28.57-1.28 1.28z" /></svg>
+              </div>
+              <div class="stat-cards-info">
+                <p class="stat-cards-info__num" id="chats_num"></p>
+                <p class="stat-cards-info__title">Chats</p>
+                <p class="stat-cards-info__progress">
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="stat-cards-item">
+              <div class="stat-cards-icon warning">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M12.02 2C6.21 2 2 6.74 2 12c0 1.68.49 3.41 1.35 4.99.16.26.18.59.07.9l-.67 2.24c-.15.54.31.94.82.78l2.02-.6c.55-.18.98.05 1.491.36 1.46.86 3.279 1.3 4.919 1.3 4.96 0 10-3.83 10-10C22 6.65 17.7 2 12.02 2z"/><path d="M11.98 13.29c-.71-.01-1.28-.58-1.28-1.29 0-.7.58-1.28 1.28-1.27.71 0 1.28.57 1.28 1.28 0 .7-.57 1.28-1.28 1.28zm-4.61 0c-.7 0-1.28-.58-1.28-1.28 0-.71.57-1.28 1.28-1.28.71 0 1.28.57 1.28 1.28 0 .7-.57 1.27-1.28 1.28zm7.94-1.28c0 .7.57 1.28 1.28 1.28.71 0 1.28-.58 1.28-1.28 0-.71-.57-1.28-1.28-1.28-.71 0-1.28.57-1.28 1.28z" /></svg>
+              </div>
+              <div class="stat-cards-info">
+                <p class="stat-cards-info__num" id="groups_num"></p>
+                <p class="stat-cards-info__title">Grupos</p>
+                <p class="stat-cards-info__progress">
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="stat-cards-item">
+              <div class="stat-cards-icon purple">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path d="M9.35 14.858c-3.964 0-7.35.612-7.35 3.06S5.364 21 9.35 21c3.963 0 7.349-.612 7.349-3.06 0-2.449-3.364-3.082-7.35-3.082z"/><path d="M9.35 12.525c2.699 0 4.862-2.119 4.862-4.763C14.212 5.12 12.05 3 9.35 3 6.651 3 4.486 5.119 4.486 7.762c0 2.644 2.165 4.763 4.863 4.763zm6.824-4.676a6.368 6.368 0 01-1.137 3.646c-.076.107-.01.252.122.275.182.03.369.048.56.052 1.898.048 3.601-1.148 4.072-2.95.698-2.675-1.35-5.077-3.957-5.077a4.16 4.16 0 00-.818.082c-.036.008-.075.025-.095.055-.025.04-.007.09.019.124a6.414 6.414 0 011.234 3.793z" /><path d="M21.78 15.17c-.348-.726-1.187-1.223-2.463-1.468-.601-.143-2.232-.348-3.747-.319-.023.003-.035.018-.037.028-.003.015.004.038.033.055.7.339 3.408 1.815 3.067 4.927a.207.207 0 00.234.232c.667-.093 2.38-.454 2.912-1.578a2.107 2.107 0 000-1.878z"/></svg>
+              </div>
+              <div class="stat-cards-info">
+                <p class="stat-cards-info__num" id="mod_num"></p>
+                <p class="stat-cards-info__title">Moderadores do bot</p>
+                <p class="stat-cards-info__progress">
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <article class="stat-cards-item">
+              <div class="stat-cards-icon success">
+                <i data-feather="feather" aria-hidden="true"></i>
+              </div>
+              <div class="stat-cards-info">
+                <p id="ip" class="stat-cards-info__num">1478 286</p>
+                <p class="stat-cards-info__title">Seu IPV4</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="users-table table-wrapper" style="height: 400px;">
+              <table class="posts-table table-info-gp">
+                <thead>
+                  <tr class="users-table-info">
+                    <th>
+                      <label class="users-table__checkbox ms-20">
+                        Foto de perfil
+                      </label>
+                    </th>
+                    <th>Nome do Grupo</th>
+                    <th>Dono</th>
+                    <th>Membros</th>
+                    <th>Ação</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ! Footer -->
+    <footer class="footer">
+  <div class="container footer--flex">
+    <div class="footer-start">
+      <p>2022 © Brizaloka - <a href="https://github.com/ianmsfvenom" target="_blank"
+          rel="noopener noreferrer">Github</a></p>
+    </div>
+    <ul class="footer-end">
+      <li><a href="https://wa.me/557187645787">Support</a></li>
+      <li><a href="https://brizas-api.herokuapp.com/pricing">Puchase</a></li>
+    </ul>
+  </div>
+</footer>
+  </div>
+</div>
+<!-- Chart library -->
+<script src="plugins/chart.min.js"></script>
+<!-- Icons library -->
+<script src="plugins/feather.min.js"></script>
+<!-- Custom scripts -->
+<script src="js/script.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+</html>

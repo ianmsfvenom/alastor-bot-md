@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+  	<title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="https://i.ibb.co/7bKybgS/251938352-5253453644667933-5723430082133919058-n.jpg" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style2.css">
+
+	</head>
+	<body>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Faça o login para entrar</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-5">
+					<div class="login-wrap p-4 p-md-5">
+		      	<div class="icon d-flex align-items-center justify-content-center">
+		      		<span class="fa fa-user-o"></span>
+		      	</div>
+		      	<h3 class="text-center mb-4">Login</h3>
+						<form action="#" class="login-form">
+		      		<div class="form-group">
+		      			<input type="text" id="login" class="form-control rounded-left" placeholder="Usuário" required>
+		      		</div>
+	            <div class="form-group d-flex">
+	              <input type="password" id="password" class="form-control rounded-left" placeholder="Senha" required>
+				</div>
+	            <div class="form-group">
+	            	<button type="submit" id="submit" class="btn btn-primary rounded submit p-3 px-5">Entrar</button>
+	            </div>
+	          </form>
+	        </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  	<script src="js/popper.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script>
+		document.getElementById('submit').addEventListener('click', function () {
+			fetch('/login', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					login: document.getElementById('login').value ? document.getElementById('login').value : null,
+					password: document.getElementById('password').value ? document.getElementById('password').value : null
+				})
+			}).then(async res => {
+				if (res.status === 200) {
+					window.location.href = '/home';
+				} else {
+					alert('Usuário ou senha incorretos');
+				}
+			})
+		})
+	</script>
+	</body>
+</html>
+
