@@ -1,6 +1,6 @@
 {
-    "port": 4040,
-    "websocket_port": 3030,
+    "port": 4444,
+    "websocket_port": 3333,
     "login": "admin",
     "password": "admin"
 }
