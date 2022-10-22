@@ -1,4 +1,4 @@
-const ownerNumber = ["527713734841@s.whatsapp.net"] 
+const ownerNumber = ["527712297198@s.whatsapp.net"] 
 // mude somente o numero e não tire o @s.whatsapp.net
 
 
