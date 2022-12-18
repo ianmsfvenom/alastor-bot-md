@@ -1,40 +1,5 @@
 [
   {
-    "557187645787@s.whatsapp.net": {
-      "id": "557187645787@s.whatsapp.net",
-      "player": "557187645787@s.whatsapp.net",
-      "game": {
-        "currentStep": 0,
-        "region": "pt",
-        "uri": "https://pt.akinator.com",
-        "urlApiWs": "https://srv11.akinator.com:9401/ws",
-        "noUri": "Could not find the uri or UrlApiWs. This most likely means that you have not started the game!",
-        "noSession": "Could not find the game session. Please make sure you have started the game!",
-        "progress": 0,
-        "guessCount": 0,
-        "childMode": {
-          "childMod": false,
-          "softConstraint": "",
-          "questionFilter": ""
-        },
-        "question": "O seu personagem é uma mulher?",
-        "answers": [
-          "Sim",
-          "Não",
-          "Não sei",
-          "Provavelmente sim",
-          "Provavelmente não"
-        ],
-        "uriObj": {
-          "uid": "2d20a790-74ee-11ed-a148-0cc47a691511",
-          "frontaddr": "MTQ3LjEzNS4xMjkuOTM="
-        },
-        "uid": "2d20a790-74ee-11ed-a148-0cc47a691511",
-        "frontaddr": "MTQ3LjEzNS4xMjkuOTM=",
-        "session": "136",
-        "signature": "1762466015",
-        "challenge_auth": "26a3b1c3-3fec-4472-bc09-f3d14ebbe3b7"
-      }
-    }
+    
   }
 ]
