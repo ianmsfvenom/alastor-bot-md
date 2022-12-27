@@ -44,7 +44,7 @@ Este bot esta protegido com a licença MIT ou seja, será permitido a distribui�
 ---
 # 🌐 Aplicativo Alastor Admin
 
-Após ter instalado o bot, enquanto ele estiver em execução você pode administra-lo sem precisar abrir o terminal, veja mensagens que ele recebe, grupos que ele está, ative e desative funções e muito mais pelo aplicativo, ele está dispoível na play store [CLIQUE AQUI](https://play.google.com/store/apps/details?id=com.brizaloka.alastoradmin) para pode acessar a página
+Após ter instalado o bot, enquanto ele estiver em execução você pode administra-lo sem precisar abrir o terminal, veja mensagens que ele recebe, grupos que ele está, ative e desative funções e muito mais pelo aplicativo, ele está dispoível na play store [CLIQUE AQUI](https://play.google.com/store/apps/details?id=com.brizaloka.alastoradmin) para pode acessar a página, insira o ipv4 privado do dispositivo em que está rodando e as portas do painel e websocket (por padrão são 4040 e 3030) para configurar o aplicativo
 
 <img src="https://i.ibb.co/ZzksHsm/download.png"/>
 
