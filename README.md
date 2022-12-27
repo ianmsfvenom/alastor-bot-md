@@ -42,6 +42,13 @@ O alastor bot consiste em um bot de whatsapp que utiliza a mais recente api bail
 Este bot esta protegido com a licença MIT ou seja, será permitido a distribuição, modificação, revenda contanto que seja dado o devido reconhecimento para o criador. Caso quebrado, o criador pode recorrer a justiça para reinvidicar seus direitos.
 
 ---
+# 🌐 Aplicativo Alastor Admin
+
+Após ter instalado o bot, enquanto ele estiver em execução você pode administra-lo sem precisar abrir o terminal, veja mensagens que ele recebe, grupos que ele está, ative e desative funções e muito mais pelo aplicativo, ele está dispoível na play store [CLIQUE AQUI](https://play.google.com/store/apps/details?id=com.brizaloka.alastoradmin) para pode acessar a página
+
+<img src="https://i.ibb.co/ZzksHsm/download.png"/>
+
+---
 
 # ❌ Aviso para os iniciantes ❌
 Por mais que a instalação seja bem simples de fazer.Este bot é feito para quem tem um conhecimento bem básico de javascript ou saiba o básico de terminal linux e <b> não irei prestar suporte caso o erro seja do usuário não souber instalar ou configurar o bot, pois os comandos são bem básicos e o conhecimento vem do usuário</b>. Mas, caso possua um bug que seja do bot mande o print no meu [whatsapp](https://wa.me/557187645787).
