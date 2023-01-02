@@ -40,6 +40,7 @@
     "socket.io": "^4.5.1",
     "socket.io-client": "^4.5.1",
     "spinnies": "^0.5.1",
+    "tinyurl": "^1.1.7",
     "translatte": "^3.0.1",
     "uberduck-api": "^1.2.2",
     "ytdownloader.js": "^1.0.9"
