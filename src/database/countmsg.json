@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "groupId": "120363029986361853@g.us",
+    "numbers": [
+      {
+        "jid": "557187645787@s.whatsapp.net",
+        "messages": 118,
+        "cmd_messages": 86
+      },
+      {
+        "jid": "557193772422@s.whatsapp.net",
+        "messages": 1,
+        "cmd_messages": 0
+      },
+      {
+        "jid": "",
+        "messages": 10,
+        "cmd_messages": 0
+      }
+    ]
+  }
+]
