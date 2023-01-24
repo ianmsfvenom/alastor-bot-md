@@ -39,7 +39,17 @@ if [ $opc == "1" ]; then
         bothome = "alastor-bot-md"
     fi
 
-    mv $HOME/$bothome/!(node_modules) /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/src /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/lib /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/README.md /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/config.js /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/index.js /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/install.sh /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/package.json /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/start.sh /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/update.js /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/LICENSE /sdcard/Documents/$botsdcard
+
 
     echo -e $GREEN"Pasta do bot do sdcard movida para home com sucesso!"
     exit
