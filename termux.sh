@@ -39,8 +39,8 @@ if [ $opc == "1" ]; then
         bothome="alastor-bot-md"
     fi
 
-    cp -r $HOME/$bothome/src /sdcard/Documents/$botsdcard
-    cp -r $HOME/$bothome/lib /sdcard/Documents/$botsdcard
+    cp -r $HOME/$bothome/src/* /sdcard/Documents/$botsdcard/src
+    cp -r $HOME/$bothome/lib/* /sdcard/Documents/$botsdcard/lib
     cp $HOME/$bothome/README.md /sdcard/Documents/$botsdcard
     cp $HOME/$bothome/config.js /sdcard/Documents/$botsdcard
     cp $HOME/$bothome/index.js /sdcard/Documents/$botsdcard
