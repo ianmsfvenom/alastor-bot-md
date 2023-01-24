@@ -101,8 +101,7 @@ Volte para os aparelhos conectado e agora cique em "Conectar um Aparelho" e pron
 ```
 git clone https://github.com/ianmsfvenom/Alastor-bot-md
 cd Alastor-bot-md
-bash install.sh
-npm install
+sh install.sh
 
 (iniciar o bot manualmente)
 npm start

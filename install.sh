@@ -10,18 +10,11 @@ NC='\033[0m'
 echo $YELLOW"[$RED!$YELLOW] Eu vou instalar as dependências essenciais pro bot funcinar você só concorda com os programas que vou instalar blz? [s/n]"
 read inp
 if [ "$inp" = "s" ]; then
-    apt update
-    apt upgrade
-    apt install ruby
-    gem install lolcat
-    apt install nodejs 
-    apt install libwebp 
-    apt install ffmpeg 
-    apt install wget 
-    apt install tesseract 
-    apt install graphicsmagick 
-    apt install imagemagick 
-    yarn install
+    apt update -y
+    apt upgrade -y
+    apt install binutils clang libsqlite pkg-config make sqlite python python2 nodejs libwebp ffmpeg wget tesseract graphicsmagick imagemagick -y
+    npm i -g yarn
+    yarn
     echo $GREEN"Hmmm tudo certo pode dar npm start, escanear o código e se divirta com o bot :)"
 fi
 if [ "$inp" = "n" ]; then
