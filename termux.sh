@@ -39,7 +39,7 @@ if [ $opc == "1" ]; then
         bothome = "alastor-bot-md"
     fi
 
-    mv !node_modules /sdcard/Documents/$botsdcard
+    mv $HOME/$bothome/!(node_modules) /sdcard/Documents/$botsdcard
 
     echo -e $GREEN"Pasta do bot do sdcard movida para home com sucesso!"
     exit
@@ -73,7 +73,7 @@ elif [ $opc == "2" ]; then
         mkdir /sdcard/Documents/$botsdcard
     fi
 
-    mv /sdcard/Documents/$botsdcard/!node_modules $HOME/$bothome
+    mv /sdcard/Documents/$botsdcard/!(node_modules) $HOME/$bothome
 
     echo -e $GREEN"Pasta do bot da home movida para o sdcard com sucesso!"
     exit
