@@ -78,11 +78,11 @@ elif [ $opc == "2" ]; then
         bothome="alastor-bot-md"
     fi
 
-    if [ ! -d "/sdcard/Documents/$botsdcard"]; then
+    if [ ! -d "/sdcard/Documents/$botsdcard" ]; then
         mkdir /sdcard/Documents/$botsdcard
     fi
 
-    mv /sdcard/Documents/$botsdcard $HOME/$bothome
+    mv /sdcard/Documents/$botsdcard/* $HOME/$bothome
 
     echo -e $GREEN"Pasta do bot da home movida para o sdcard com sucesso!"
     exit
