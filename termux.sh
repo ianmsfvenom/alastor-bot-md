@@ -21,7 +21,7 @@ if [ $opc == "1" ]; then
         exit
     fi
 
-    if [ $botsdcard == "1"];then
+    if [ $botsdcard == "1"]; then
         botsdcard = "alastor-bot-md"
     fi
 
@@ -33,11 +33,11 @@ if [ $opc == "1" ]; then
         exit
     fi
 
-    if [ $bothome == "1"];then
+    if [ $bothome == "1"]; then
         bothome = "alastor-bot-md"
     fi
 
-    mv $HOME/$bothome/!(node_modules) /sdcard/Documents/$botsdcard
+    mv !node_modules /sdcard/Documents/$botsdcard
 
     echo $GREEN"Pasta do bot do sdcard movida para home com sucesso!"
     exit
@@ -50,19 +50,19 @@ elif [ $opc == "2" ]; then
         exit
     fi
 
-    if [ $botsdcard == "1"];then
+    if [ $botsdcard == "1"]; then
         botsdcard = "alastor-bot-md"
     fi
 
     echo $YELLOW"Diga o nome da pasta do bot da home (alastor-bot-md = 1)\nObs: A pasta do bot do sdcard deve ta na pasta Documents do sdcard"
     read bothome
-    
+
     if [ -z "$bothome" ]; then
         echo $RED"Nome de pasta vazia, saindo..."
         exit
     fi
     
-    if [ $bothome == "1"];then
+    if [ $bothome == "1"]; then
         bothome = "alastor-bot-md"
     fi
 
@@ -70,7 +70,7 @@ elif [ $opc == "2" ]; then
         mkdir /sdcard/Documents/$botsdcard
     fi
 
-    mv /sdcard/Documents/$botsdcard/!(node_modules) $HOME/$bothome
+    mv /sdcard/Documents/$botsdcard/!node_modules $HOME/$bothome
 
     echo $GREEN"Pasta do bot da home movida para o sdcard com sucesso!"
     exit
