@@ -12,6 +12,7 @@ echo -e $CYAN"2) Mover bot do sdcard para home"
 echo -e $RED"3) Sair"
 read opc
 
+clear
 if [ $opc == "1" ]; then
     echo -e $YELLOW"Diga o nome da pasta do bot do sdcard (alastor-bot-md = 1)\n\nObs: A pasta do bot do sdcard deve ta na pasta Documents do sdcard"
     read botsdcard
@@ -21,10 +22,11 @@ if [ $opc == "1" ]; then
         exit
     fi
 
-    if [ $botsdcard == "1"]; then
+    if [ $botsdcard == "1" ]; then
         botsdcard = "alastor-bot-md"
     fi
 
+    clear
     echo -e $YELLOW"Diga o nome da pasta do bot da home (alastor-bot-md = 1)\n\nObs: A pasta do bot do sdcard deve ta na pasta Documents do sdcard"
     read bothome
 
@@ -33,7 +35,7 @@ if [ $opc == "1" ]; then
         exit
     fi
 
-    if [ $bothome == "1"]; then
+    if [ $bothome == "1" ]; then
         bothome = "alastor-bot-md"
     fi
 
@@ -50,10 +52,11 @@ elif [ $opc == "2" ]; then
         exit
     fi
 
-    if [ $botsdcard == "1"]; then
+    if [ $botsdcard == "1" ]; then
         botsdcard = "alastor-bot-md"
     fi
 
+    clear
     echo -e $YELLOW"Diga o nome da pasta do bot da home (alastor-bot-md = 1)\nObs: A pasta do bot do sdcard deve ta na pasta Documents do sdcard"
     read bothome
 
@@ -62,7 +65,7 @@ elif [ $opc == "2" ]; then
         exit
     fi
     
-    if [ $bothome == "1"]; then
+    if [ $bothome == "1" ]; then
         bothome = "alastor-bot-md"
     fi
 
