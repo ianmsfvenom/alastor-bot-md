@@ -39,16 +39,16 @@ if [ $opc == "1" ]; then
         bothome="alastor-bot-md"
     fi
 
-    mv $HOME/$bothome/src /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/lib /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/README.md /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/config.js /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/index.js /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/install.sh /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/package.json /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/start.sh /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/update.js /sdcard/Documents/$botsdcard
-    mv $HOME/$bothome/LICENSE /sdcard/Documents/$botsdcard
+    cp -r $HOME/$bothome/src /sdcard/Documents/$botsdcard
+    cp -r $HOME/$bothome/lib /sdcard/Documents/$botsdcard
+    cp $HOME/$bothome/README.md /sdcard/Documents/$botsdcard
+    cp $HOME/$bothome/config.js /sdcard/Documents/$botsdcard
+    cp $HOME/$bothome/index.js /sdcard/Documents/$botsdcard
+    cp $HOME/$bothome/install.sh /sdcard/Documents/$botsdcard
+    cp $HOME/$bothome/package.json /sdcard/Documents/$botsdcard
+    cp $HOME/$bothome/start.sh /sdcard/Documents/$botsdcard
+    cp $HOME/$bothome/update.js /sdcard/Documents/$botsdcard
+    cp $HOME/$bothome/LICENSE /sdcard/Documents/$botsdcard
 
     echo -e $GREEN"Pasta do bot do sdcard movida para home com sucesso!"
     exit
@@ -82,7 +82,7 @@ elif [ $opc == "2" ]; then
         mkdir /sdcard/Documents/$botsdcard
     fi
 
-    mv /sdcard/Documents/$botsdcard/* $HOME/$bothome
+    cp -r /sdcard/Documents/$botsdcard/* $HOME/$bothome
 
     echo -e $GREEN"Pasta do bot da home movida para o sdcard com sucesso!"
     exit
