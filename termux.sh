@@ -39,6 +39,12 @@ if [ $opc == "1" ]; then
         bothome="alastor-bot-md"
     fi
 
+    if [ ! -d "/sdcard/Documents/$botsdcard" ]; then
+        mkdir /sdcard/Documents/$botsdcard
+        mkdir /sdcard/Documents/$botsdcard/lib
+        mkdir /sdcard/Documents/$botsdcard/src
+    fi
+
     cp -r $HOME/$bothome/src/* /sdcard/Documents/$botsdcard/src
     cp -r $HOME/$bothome/lib/* /sdcard/Documents/$botsdcard/lib
     cp $HOME/$bothome/README.md /sdcard/Documents/$botsdcard
