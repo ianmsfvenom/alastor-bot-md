@@ -23,7 +23,7 @@ if [ $opc == "1" ]; then
     fi
 
     if [ $botsdcard == "1" ]; then
-        botsdcard = "alastor-bot-md"
+        botsdcard="alastor-bot-md"
     fi
 
     clear
@@ -36,7 +36,7 @@ if [ $opc == "1" ]; then
     fi
 
     if [ $bothome == "1" ]; then
-        bothome = "alastor-bot-md"
+        bothome="alastor-bot-md"
     fi
 
     mv $HOME/$bothome/src /sdcard/Documents/$botsdcard
@@ -62,7 +62,7 @@ elif [ $opc == "2" ]; then
     fi
 
     if [ $botsdcard == "1" ]; then
-        botsdcard = "alastor-bot-md"
+        botsdcard="alastor-bot-md"
     fi
 
     clear
@@ -75,7 +75,7 @@ elif [ $opc == "2" ]; then
     fi
     
     if [ $bothome == "1" ]; then
-        bothome = "alastor-bot-md"
+        bothome="alastor-bot-md"
     fi
 
     if [ ! -d "/sdcard/Documents/$botsdcard"]; then
