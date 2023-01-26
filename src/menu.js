@@ -1013,6 +1013,7 @@ ${level}
 *${p}toimg _marcar figurinha_*`
 }
 
+// Olhe a documentação da baileys para saber editar melhor https://github.com/adiwajshing/Baileys#sending-messages
 const mainMenuConfig = (emojiTime, time, user, deviceTypeName, memberType, level, prefix) => {
     return {
         text: `*${emojiTime} Data/hora: _${time}_*
