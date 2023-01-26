@@ -56,7 +56,7 @@ if [ $opc == "1" ]; then
     cp $HOME/$bothome/update.js /sdcard/Documents/$botsdcard
     cp $HOME/$bothome/LICENSE /sdcard/Documents/$botsdcard
 
-    echo -e $GREEN"Pasta do bot do sdcard movida para home com sucesso!"
+    echo -e $GREEN"Pasta do bot do home movida para /sdcard com sucesso!"
     exit
 elif [ $opc == "2" ]; then
     echo -e $YELLOW"Diga o nome da pasta do bot do sdcard (alastor-bot-md = 1)\nObs: A pasta do bot do sdcard deve ta na pasta Documents do sdcard"
@@ -90,7 +90,7 @@ elif [ $opc == "2" ]; then
 
     cp -r /sdcard/Documents/$botsdcard/* $HOME/$bothome
 
-    echo -e $GREEN"Pasta do bot da home movida para o sdcard com sucesso!"
+    echo -e $GREEN"Pasta do bot do /sdcard movida para o home com sucesso!"
     exit
 elif [ $opc == "3" ]; then
     echo -e $RED"Saindo..."
