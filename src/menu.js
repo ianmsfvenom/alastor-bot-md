@@ -1013,6 +1013,68 @@ ${level}
 *${p}toimg _marcar figurinha_*`
 }
 
+const mainMenuConfig = (emojiTime, time, user, deviceTypeName, memberType, level, prefix) => {
+    return {
+        text: `*${emojiTime} Data/hora: _${time}_*
+*👱‍♂️ Usuário: _${user}_*
+*📱 Dispositivo: _${deviceTypeName}_*
+*🔰 Tipo de membro: _${memberType}_*
+*🌐 Nível: _${level}_*\n
+*Seja bem-vindo ao menu principal do ✟🔥⃢⃟𝘼𝙇𝘼⃟𝙎𝙏𝙊𝙍 𝘽𝙊⃟𝙏🔥✟, selecione a lista de comandos que deseja clicando no botão abaixo!*`,
+        footer: 'Clique no botão para ver a lista:',
+        title: '🤖 *Bem-vindo ao menu principal* 🤖',
+        buttonText: 'Ver lista de menus',
+        sections: [{
+            title: 'Lista de menus',
+            rows: [{
+                rowId: prefix+'getmenu all',
+                title: '🌐 Todos os comandos 🌐',
+                description: 'Veja todos os comandos de todas categorias'
+            },{
+                rowId: prefix+'getmenu main',
+                title: '👑 Comandos principais 👑',
+                description: 'Veja os comandos principais do bot'
+            }, {
+                rowId: prefix+'getmenu audio',
+                title: '🔊 Comandos de Áudio 🔊',
+                description: 'Baixe e edite músicas com comandos de áudio'
+            }, {
+                rowId: prefix+'getmenu sticker',
+                title: '💟 Comandos de Figurinhas 💟',
+                description: 'Crie figurinhas com comando de sticker'
+            }, {
+                rowId: prefix+'getmenu game',
+                title: '🎮 Comandos de Jogos e diversão 🎮',
+                description: 'Se divirta com seus amigos com comandos de jogos'
+            }, {
+                rowId: prefix+'getmenu consult',
+                title: '🕵️‍♂️ Comandos de consulta 🕵️‍♂️',
+                description: 'Verifique seus dados com comandos de consulta'
+            }, {
+                rowId: prefix+'getmenu search',
+                title: '🔎 Comandos de pesquisa 🔍',
+                description: 'Consulte sites com comandos de pesquisa'
+            }, {
+                rowId: prefix+'getmenu groups',
+                title: '👤 Comandos de Grupos 👤',
+                description: 'Administre sua comunidade com comandos de grupo'
+            }, {
+                rowId: prefix+'getmenu logo',
+                title: '🖍️ Comandos de Efeitos, montagens e logos 🖍️',
+                description: 'Crie montagens e logos com comando de logos'
+            }, {
+                rowId: prefix+'getmenu porn',
+                title: '🔞 Comandos +18 🔞',
+                description: 'Veja conteúdo adulto com comandos +18'
+            }, {
+                rowId: prefix+'getmenu owner',
+                title: '😎 Comandos do proprietário 😎',
+                description: 'Administre o bot com comandos do proprietário'
+            }]
+        }]
+    }
+}
+
 module.exports = {
     menumain,
     menuowner,
@@ -1024,7 +1086,6 @@ module.exports = {
     menuaudio,
     menusearch,
     menugroups,
-    menulogo
+    menulogo,
+    mainMenuConfig
 }
-
-
