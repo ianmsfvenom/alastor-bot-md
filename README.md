@@ -26,6 +26,7 @@ O alastor bot consiste em um bot de whatsapp que utiliza a mais recente api bail
 
 - [Código Editável e Base Descriptografada](#-código-editável-e-base-descriptografada)
 - [O que há de novo?](#o-que-há-de-novo)
+- [Tutorial no youtube](#-tutorial-no-youtube)
 - [Instalação](#%EF%B8%8F-instalação)
 - [Instalação pelo windows](#%EF%B8%8F-instalação-pelo-windows)
 - [Trocar de número e reiniciar QR code](#-trocar-de-número-o-resetar-qr-code)
@@ -33,7 +34,6 @@ O alastor bot consiste em um bot de whatsapp que utiliza a mais recente api bail
 - [Donate](#-donate)
 - [Contatos](#-contato)
 - [Contribuição](#-contribuição)
-- [Tutorial no youtube](#-tutorial-no-youtube)
 -----
 
 
