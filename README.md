@@ -33,7 +33,6 @@ O alastor bot consiste em um bot de whatsapp que utiliza a mais recente api bail
 - [Donate](#-donate)
 - [Contatos](#-contato)
 - [Contribuição](#-contribuição)
-
 - [Tutorial no youtube](#-tutorial-no-youtube)
 -----
 
@@ -81,7 +80,7 @@ Caso tenha interesse em comprar o código editável do alastor bot ou alguma bas
 
 ----
 
-# <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" width="25px"> Tutorial no youtube
+# <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" width="35px"> Tutorial no youtube
 
 
 <a href="https://www.youtube.com/watch?v=HzzPeMohgOs&t=48s">
@@ -184,7 +183,7 @@ Obrigado por nos apoiar!
 
 -----
 
-## <img src="https://media.tenor.com/images/3c73ab1a2d871e65d0435c28f72f2944/tenor.gif" width="35px"> Contribuição
+# <img src="https://media.tenor.com/images/3c73ab1a2d871e65d0435c28f72f2944/tenor.gif" width="35px"> Contribuição
 
 [KillovSky](https://github.com/KillovSky/iris)
 
