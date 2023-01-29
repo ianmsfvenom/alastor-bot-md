@@ -34,6 +34,7 @@ O alastor bot consiste em um bot de whatsapp que utiliza a mais recente api bail
 - [Contatos](#-contato)
 - [Contribuição](#-contribuição)
 
+- [Tutorial no youtube](#-tutorial-no-youtube)
 -----
 
 
@@ -80,6 +81,15 @@ Caso tenha interesse em comprar o código editável do alastor bot ou alguma bas
 
 ----
 
+# <img src="https://cdn-icons-png.flaticon.com/512/3670/3670147.png" width="25px"> Tutorial no youtube
+
+
+<a href="https://www.youtube.com/watch?v=HzzPeMohgOs&t=48s">
+<img src="https://i.ytimg.com/vi/HzzPeMohgOs/maxresdefault.jpg?sqp=-oaymwEiCMQBEG5IWvKriqkDFQgBFQAAAAAYASUAAMhCPQCAokN4AQ==&rs=AOn4CLDtz-iV48Mtjs3KlEPFtgl7owRefQ">
+</a>
+
+Caso não tenha entendido do tutorial em texto, veja um vídeo no youtube para poder entender da melhor forma e instalar o bot no seu termux
+
 # ⬇️ Instalação
 
 Primeiro de tudo, para poder instalar o bot no seu whatsapp não deve se utilizar nenhum modificação no aplicativo pois ele não está atualizado, você deve instalar o whatsapp da playstore e em seguida instalar o whatsapp beta, caso você já possua não é necessário reinstalar, mas caso você não tenha instalado, segue o link para [baixar o whatsapp beta](https://suaurl.com/whatsapp-beta)
@@ -102,6 +112,7 @@ Volte para os aparelhos conectado e agora cique em "Conectar um Aparelho" e pron
 git clone https://github.com/ianmsfvenom/Alastor-bot-md
 cd Alastor-bot-md
 sh install.sh
+
 
 (iniciar o bot manualmente)
 npm start
