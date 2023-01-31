@@ -122,8 +122,6 @@ sh start.sh
 (ou)
 pm2 start index.js
 
-(caso queira atualizar o bot)
-node update.js
 ```
 AVISO: AO ESCANEAR O QRCODE O WHATSAPP IRÁ ENTRAR EM UM LOOP DE CONEXÃO E O BOT IRÁ PARAR DE RODAR. É FUNDAMENTAL QUE VOCÊ DÊ O COMANDO `node index.js` ASSIM QUE ESCANEAR O QR CODE FOR ESCANEADO E O BOT PARAR DE RODAR, CASO CONTRÁRIO NÃO IRA CONECTAR E TERA QUE RESETAR O QR CODE
 
@@ -185,7 +183,7 @@ Obrigado por nos apoiar!
 
 -----
 
-# <img src="https://media.tenor.com/images/3c73ab1a2d871e65d0435c28f72f2944/tenor.gif" width="35px"> Contribuição
+## <img src="https://media.tenor.com/images/3c73ab1a2d871e65d0435c28f72f2944/tenor.gif" width="35px"> Contribuição
 
 [KillovSky](https://github.com/KillovSky/iris)
 
