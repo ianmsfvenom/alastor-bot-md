@@ -57,9 +57,8 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ${p}fstiker (marcar img/vid) 
 ┋ ${p}fsticker (marcar img/vid) 
 ┋ ${p}nstiker (pacote) (autor) 
-┋ ${p}nsticker (pacote) (autor) 
-┋ ${p}nfstiker (pacote) (autor) 
-┋ ${p}nfsticker (pacote) (autor) 
+┋ ${p}nsticker (pacote) (autor)
+┋ ${p}roubar (pacote) (autor) 
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
 
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
@@ -298,7 +297,8 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ${p}abrirhr 12:00
 ┋ ${p}mudarnome 
 ┋ ${p}abrirgp 
-┋ ${p}linkgroup 
+┋ ${p}linkgroup
+┋ ${p}resetlinkgp
 ┋ ${p}listadmin 
 ┋ ${p}leave 
 ┋ ${p}kick (dial num)  
@@ -636,11 +636,11 @@ ${level}
 *${p}csticker _marcar img/vid_* 
 *${p}cstiker _marcar img/vid_*
 *${p}fstiker _marcar img/vid_* 
-*${p}fsticker _marcar img/vid_* 
+*${p}fsticker _marcar img/vid_*
+*${p}ns _pacote_ | _autor_*
 *${p}nstiker _pacote_ | _autor_*
 *${p}nsticker _pacote_ | _autor_* 
-*${p}nfstiker _pacote_ | _autor_* 
-*${p}nfsticker _pacote_ | _autor_*`
+*${p}roubar _pacote_ | _autor_*`
 }
 
 const menusearch = (p, user, deviceTypeName, memberType, level, dateTime) => {
@@ -701,6 +701,7 @@ ${level}
 *${p}abrirhr 12:00*
 *${p}mudarnome _nome_*
 *${p}abrirgp*
+*${p}resetlinkgp*
 *${p}linkgroup*
 *${p}listadmin* 
 *${p}leave*
