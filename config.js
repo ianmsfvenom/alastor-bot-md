@@ -92,8 +92,8 @@ let mess = {
     },
     only: {
         group: 'Infelizmente este comando está disponível somente para grupos meu caro! 🚫',
-        ownerG: 'Este comando somente meu chefe pode usar! 🚫',
-        ownerB: 'Este comando somente o grupo do meu chefe pode usar! 🚫',
+        ownerB: 'Este comando somente meu chefe pode usar! 🚫',
+        ownerG: 'Este comando somente o grupo do meu chefe pode usar! 🚫',
         admin: 'Se ponha no seu lugar membro comum 🚫',
         Badmin: 'Não sou administrador desse grupo, não posso fazer nada 🚫',
     }
