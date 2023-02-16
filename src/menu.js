@@ -19,6 +19,7 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ${p}blacklist 
 ┋ ${p}criador  
 ┋ ${p}toimg (resp sticker)
+┋ ${p}alugarstts
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
 
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
@@ -64,6 +65,8 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋  😎 𝘾𝙍𝙄𝘼𝘿𝙊𝙍 😎
 ┋
+┋ ${p}backup
+┋ ${p}restore
 ┋ ${p}entrargp (group link) 
 ┋ ${p}blocklevel (1 or 0) 
 ┋ ${p}blockcmd (cmd sem prefix) 
@@ -78,6 +81,10 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ${p}tm (txt)
 ┋ ${p}tmgroups (txt)
 ┋ ${p}adsmode (1 or 0) 
+┋ ${p}getgroupid
+┋ ${p}alugardel (id da compra)
+┋ ${p}alugar (dias)|(client num)|(gp id)
+┋ ${p}alugarupdate (id da compra)|(dias)
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
 
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
@@ -116,6 +123,7 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋┋ ${p}papel 
 ┋┋ ${p}pedra 
 ┋┋ ${p}tesoura
+┋┋ ${p}gpt (question)
 ┋╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
 ┋
 ┋╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
@@ -541,6 +549,7 @@ ${level}
 *${p}papel*
 *${p}pedra*
 *${p}tesoura*
+*${p}gpt _pergunta_*
 
 
 *🎰🎲 𝐁𝐋𝐀𝐙𝐄 🎲🎰*
@@ -959,6 +968,8 @@ ${level}
 
 *👨‍🔧👨‍💻 𝐀𝐃𝐌𝐈𝐍𝐈𝐒𝐓𝐑𝐀𝐑 𝐁𝐎𝐓 👨‍💻👨‍🔧*
 
+*${p}backup*
+*${p}restore*
 *${p}entrargp _link de grupo_*
 *${p}blocklevel _1 ou 0_* 
 *${p}blockcmd _cmd sem prefix_*
@@ -974,6 +985,14 @@ ${level}
 *${p}tm _mensagem_*
 *${p}tmgroups _mensagem_*
 *${p}adsmode _1 ou 0_*
+
+
+*💰🤑 𝐀𝐋𝐔𝐆𝐀𝐑 𝐁𝐎𝐓 🤑💰*
+
+*${p}getgroupid*
+*${p}alugardel _id da compra_*
+*${p}alugar _dias_|_número cliente_|_id do grupo_*
+*${p}alugarupdate _id da compra_|_numéro de dias_*
 
 
 *🖊️🗳️ 𝐕𝐎𝐓𝐀𝐂𝐀𝐎 🗳️🖊️*
@@ -1013,9 +1032,19 @@ ${level}
 *${p}blocklist*
 *${p}blacklist*
 *${p}criador*
-*${p}toimg _marcar figurinha_*`
+*${p}toimg _marcar figurinha_*
+*${p}alugarstts*`
 }
 
+const menualugar = (pushname) => {
+    return `*Olá ${pushname}, Você quer adicionar o bot no seu grupo de whatsapp para entreter seus membros e ajuda a administrar e proteger seu grupo?*
+*Veja nossos planos para alugar o alastor bot:*
+
+*🍃🤩 Semanal: _R$:15,00_ 🍃*
+*🍃🥳 Mensal: _R$ 35,00_ 🍃*
+
+_*Obs: Somente deve-se alugar o bot caso seja administrador do grupo ou seja autorizado por tal*_`
+}
 const mainMenuConfig = (emojiTime, time, user, deviceTypeName, memberType, level, prefix) => {
     return {
         text: `*${emojiTime} Data/hora: _${time}_*
@@ -1031,54 +1060,59 @@ const mainMenuConfig = (emojiTime, time, user, deviceTypeName, memberType, level
             title: 'Lista de menus',
             rows: [{
                 rowId: prefix+'getmenu all',
-                title: '🌐 Todos os comandos 🌐',
+                title: '🌐 𝐓𝐎𝐃𝐎𝐒 𝐎𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 🌐',
                 description: 'Veja todos os comandos de todas categorias'
             },{
                 rowId: prefix+'getmenu main',
-                title: '👑 Comandos principais 👑',
+                title: '👑 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐏𝐑𝐈𝐍𝐂𝐈𝐏𝐀𝐈𝐒 👑',
                 description: 'Veja os comandos principais do bot'
             }, {
                 rowId: prefix+'getmenu audio',
-                title: '🔊 Comandos de Áudio 🔊',
+                title: '🔊 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐀𝐔𝐃𝐈𝐎 🔊',
                 description: 'Baixe e edite músicas com comandos de áudio'
             }, {
                 rowId: prefix+'getmenu sticker',
-                title: '💟 Comandos de Figurinhas 💟',
+                title: '💟 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐅𝐈𝐆𝐔𝐑𝐈𝐍𝐇𝐀𝐒 💟',
                 description: 'Crie figurinhas com comando de sticker'
             }, {
                 rowId: prefix+'getmenu game',
-                title: '🎮 Comandos de Jogos e diversão 🎮',
+                title: '🎮 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐉𝐎𝐆𝐎𝐒 𝐄 𝐃𝐈𝐕𝐄𝐑𝐒𝐀𝐎 🎮',
                 description: 'Se divirta com seus amigos com comandos de jogos'
             }, {
                 rowId: prefix+'getmenu consult',
-                title: '🕵️‍♂️ Comandos de consulta 🕵️‍♂️',
+                title: '🕵️‍♂️ 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐂𝐎𝐍𝐒𝐔𝐋𝐓𝐀 🕵️‍♂️',
                 description: 'Verifique seus dados com comandos de consulta'
             }, {
                 rowId: prefix+'getmenu search',
-                title: '🔎 Comandos de pesquisa 🔍',
+                title: '🔎 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐏𝐄𝐒𝐐𝐔𝐈𝐒𝐀 🔍',
                 description: 'Consulte sites com comandos de pesquisa'
             }, {
                 rowId: prefix+'getmenu groups',
-                title: '👤 Comandos de Grupos 👤',
+                title: '👤 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐆𝐑𝐔𝐏𝐎 👤',
                 description: 'Administre sua comunidade com comandos de grupo'
             }, {
                 rowId: prefix+'getmenu logo',
-                title: '🖍️ Comandos de Efeitos, montagens e logos 🖍️',
+                title: '🖍️ 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐄 𝐄𝐅𝐄𝐈𝐓𝐎𝐒 𝐄 𝐋𝐎𝐆𝐎𝐒 🖍️',
                 description: 'Crie montagens e logos com comando de logos'
             }, {
                 rowId: prefix+'getmenu porn',
-                title: '🔞 Comandos +18 🔞',
+                title: '🔞 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 +18 🔞',
                 description: 'Veja conteúdo adulto com comandos +18'
             }, {
                 rowId: prefix+'getmenu owner',
-                title: '😎 Comandos do proprietário 😎',
+                title: '😎 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐃𝐎 𝐏𝐑𝐎𝐏𝐑𝐈𝐄𝐓𝐀𝐑𝐈𝐎 😎',
                 description: 'Administre o bot com comandos do proprietário'
+            }, {
+                rowId: prefix+'getmenu alugar',
+                title: '🤩🤖 𝐀𝐋𝐔𝐆𝐔𝐄 𝐎 𝐁𝐎𝐓 🤖🤩',
+                description: 'Tenha o bot exclusivo seu grupo se divertir 🎉'
             }]
         }]
     }
 }
 
 module.exports = {
+    menualugar,
     menumain,
     menuowner,
     menuconsult,

@@ -37,6 +37,7 @@
     "multistream": "^4.1.0",
     "node-cron": "^3.0.0",
     "node-fetch": "^2.6.5",
+    "openai": "^3.1.0",
     "performance-now": "^2.1.0",
     "pino": "^6.13.3",
     "pm2": "^5.1.2",
@@ -59,7 +60,6 @@
   },
   "author": "Briz4lok4",
   "description": "Bot em pt-br com base original 100% BR usando api baileys-md",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ianmsfvenom/Alastor-private.git"

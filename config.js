@@ -4,6 +4,8 @@ const ownerNumber = ["557187645787@s.whatsapp.net"]
 
 var prefixs = ['!', '.', '#', '$', '&', '/', '>', '?']
 // prefixos
+const chatGptKey = ''
+// Apikey do chatgpt
 
 const OriginalOwner = '557187645787' 
 // mude para seu numero
@@ -102,8 +104,8 @@ let mess = {
 // CONTATO DO CRIADOR
 const vcard = 'BEGIN:VCARD\n' 
 + 'VERSION:3.0\n' 
-+ 'FN:Meu Chefe\n' 
-+ 'ORG:Ian;\n' 
++ 'FN:Converse com meu chefe\n' 
++ 'ORG:Proprietário do alastor bot;\n' 
 + 'TEL;type=CELL;type=VOICE;waid=557187645787:+55 71 8764 5787\n' 
 + 'END:VCARD'
 //vcard do propietário, mude os numeros de acordo com o formato que
@@ -170,34 +172,9 @@ const adsArray = [
     `*Administre seu grupo da melhor forma, entretenha seus membros. Alugue o bot no seu grupo*\n*Negocie com meu proprietário https://wa.me/557187645787*\n\n*Obs: O bot somente é adicionado caso você seja administrador do grupo*`
 ]
 
-// Nem ouse mexer aqui se n quiser que de erro
-exports.adsShowCount = adsShowCount
-exports.adsArray = adsArray
-exports.registeruser = registeruser
-exports.gpvotohelp = gpvotohelp
-exports.votohelp = votohelp
-exports.ativohelp = ativohelp
-exports.limitqnt = limitqnt
-exports.delayantispamcmd = delayantispamcmd
-exports.antinewchatmsg = antinewchatmsg
-exports.antipvmsg = antipvmsg
-exports.backgroundbyeimg = backgroundbyeimg
-exports.backgroundwelcomeimg = backgroundwelcomeimg
-exports.titlemenumsgimg = titlemenumsgimg
-exports.notregister = notregister
-exports.blockedcmdmsg = blockedcmdmsg
-exports.blockedmsg = blockedmsg
-exports.adminmsgtype = adminmsgtype
-exports.adminmsgporn = adminmsgporn
-exports.adminmsglink = adminmsglink
-exports.banmsglink = banmsglink
-exports.banmsgporn = banmsgporn
-exports.banmsgtype = banmsgtype
-exports.msgerr = msgerr
-exports.mess = mess
-exports.prefixs = prefixs
-exports.vcard = vcard
-exports.OriginalOwner = OriginalOwner
-exports.ownerNumber = ownerNumber
-exports.menuimg = menuimg
-exports.panelOn = panelOn
+module.exports = { OriginalOwner, panelOn, menuimg, ownerNumber, ownerNumber,
+vcard, prefixs, mess, msgerr, banmsgtype, banmsgporn, banmsglink, 
+adminmsglink, adminmsgporn, adminmsgtype, blockedmsg, blockedcmdmsg,
+notregister, titlemenumsgimg, backgroundwelcomeimg, backgroundbyeimg, 
+antipvmsg, antinewchatmsg, delayantispamcmd, limitqnt, ativohelp, 
+votohelp, gpvotohelp, registeruser, adsArray, adsShowCount, chatGptKey}
