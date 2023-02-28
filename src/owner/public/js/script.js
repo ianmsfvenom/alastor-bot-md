@@ -504,4 +504,12 @@ function executeScript() {
   addData();
 }
 
+function dataAtualFormatada(time = new Date().getTime()){
+  var data = new Date(time),
+      dia  = data.getDate().toString().padStart(2, '0'),
+      mes  = (data.getMonth()+1).toString().padStart(2, '0'),
+      ano  = data.getFullYear();
+  return dia+"/"+mes+"/"+ano;
+}
+
 executeScript()
