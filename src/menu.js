@@ -85,6 +85,7 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ ${p}alugardel (id da compra)
 ┋ ${p}alugar (dias)|(client num)|(gp id)
 ┋ ${p}alugarupdate (id da compra)|(dias)
+┋ ${p}alugarhelp
 ╰┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╯
 
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
@@ -222,6 +223,7 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ 🔎 𝙋𝙀𝙎𝙌𝙐𝙄𝙎𝘼 🔎
 ┋
+┋ ${p}gobayu (anime name)
 ┋ ${p}wikipedia (txt)
 ┋ ${p}gsearch (txt)
 ┋ ${p}gmaps (txt)
@@ -664,6 +666,7 @@ ${level}
 
 *🕵️🔎 𝐏𝐄𝐒𝐐𝐔𝐈𝐒𝐀 🔎🕵️*
 
+*${p}gobayu _nome do anime_*
 *${p}wikipedia _mensagem_*
 *${p}gsearch _mensagem_*
 *${p}gmaps _mensagem_*
@@ -705,7 +708,7 @@ ${level}
 *${p}listfake* 
 *${p}listbr*
 *${p}listddd _código_*
-*${p}fechargp *
+*${p}fechargp*
 *${p}fecharhr 12:00*
 *${p}abrirhr 12:00*
 *${p}mudarnome _nome_*
@@ -992,6 +995,7 @@ ${level}
 *${p}getgroupid*
 *${p}alugardel _id da compra_*
 *${p}alugar _dias_|_número cliente_|_id do grupo_*
+*${p}alugarhelp*
 *${p}alugarupdate _id da compra_|_numéro de dias_*
 
 
