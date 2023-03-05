@@ -223,7 +223,7 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋ 🔎 𝙋𝙀𝙎𝙌𝙐𝙄𝙎𝘼 🔎
 ┋
-┋ ${p}gobayu (anime name)
+┋ ${p}goyabu (anime name)
 ┋ ${p}wikipedia (txt)
 ┋ ${p}gsearch (txt)
 ┋ ${p}gmaps (txt)
@@ -666,7 +666,7 @@ ${level}
 
 *🕵️🔎 𝐏𝐄𝐒𝐐𝐔𝐈𝐒𝐀 🔎🕵️*
 
-*${p}gobayu _nome do anime_*
+*${p}goyabu _nome do anime_*
 *${p}wikipedia _mensagem_*
 *${p}gsearch _mensagem_*
 *${p}gmaps _mensagem_*
