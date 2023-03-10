@@ -328,13 +328,13 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋    🌈 𝙏𝙏𝙋 🌈
 ┋
-┋ ${p}attp (txt) 
+┋ ${p}attp1 (txt) 
 ┋ ${p}attp2 (txt) 
 ┋ ${p}attp3 (txt) 
 ┋ ${p}attp4 (txt) 
 ┋ ${p}attp5 (txt) 
 ┋ ${p}attp6 (txt) 
-┋ ${p}ttp (txt) 
+┋ ${p}ttp1 (txt) 
 ┋ ${p}ttp2 (txt) 
 ┋ ${p}ttp3 (txt) 
 ┋ ${p}ttp4 (txt) 
@@ -626,13 +626,13 @@ ${level}
 
 *🌈🖍️ 𝐓𝐓𝐏𝐬 🖍️🌈*
 
-*${p}attp _mensagem_*
+*${p}attp1 _mensagem_*
 *${p}attp2 _mensagem_*
 *${p}attp3 _mensagem_* 
 *${p}attp4 _mensagem_* 
 *${p}attp5 _mensagem_* 
 *${p}attp6 _mensagem_* 
-*${p}ttp _mensagem_* 
+*${p}ttp1 _mensagem_* 
 *${p}ttp2 _mensagem_* 
 *${p}ttp3 _mensagem_* 
 *${p}ttp4 _mensagem_* 

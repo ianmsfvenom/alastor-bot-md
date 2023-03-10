@@ -1,4 +1,4 @@
-const ownerNumber = ["557187645787@s.whatsapp.net"] 
+const ownerNumber = ["79919841518@s.whatsapp.net"] 
 // mude somente o numero e não tire o @s.whatsapp.net
 
 
@@ -7,7 +7,7 @@ var prefixs = ['!', '.', '#', '$', '&', '/', '>', '?']
 const chatGptKey = ''
 // Apikey do chatgpt
 
-const OriginalOwner = '557187645787' 
+const OriginalOwner = '79919841518' 
 // mude para seu numero
 
 const menuimg = 'https://i.imgur.com/2KJfprY.jpg'
@@ -106,7 +106,7 @@ const vcard = 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n' 
 + 'FN:Converse com meu chefe\n' 
 + 'ORG:Proprietário do alastor bot;\n' 
-+ 'TEL;type=CELL;type=VOICE;waid=557187645787:+55 71 8764 5787\n' 
++ 'TEL;type=CELL;type=VOICE;waid=79919841518:+7 991 984-15-18\n' 
 + 'END:VCARD'
 //vcard do propietário, mude os numeros de acordo com o formato que
 //ele corresponde
@@ -166,10 +166,10 @@ const adsShowCount = 8
 
 // Lista de propagandas a ser aparecidas
 const adsArray = [
-    '*Você quer ter o alastor bot no seu grupo do whatsapp? Agora é possível! Negocie com meu proprietário clicando no link https://wa.me/557187645787*\n\n*Obs: O bot somente é adicionado caso você seja administrador do grupo*',
+    '*Você quer ter o alastor bot no seu grupo do whatsapp? Agora é possível! Negocie com meu proprietário clicando no link https://wa.me/79919841518*\n\n*Obs: O bot somente é adicionado caso você seja administrador do grupo*',
     `*Sabia que dá para jogar o jogo friday night funkin e disputar seu recorde contra outros jogadores do bot? Basta da o comando ${prefixs[0]}fnf para saber mais*`,
     `*Baixe playlist e mixes do youtube com o comando ${prefixs[0]}playlist _link da playlist_*`,
-    `*Administre seu grupo da melhor forma, entretenha seus membros. Alugue o bot no seu grupo*\n*Negocie com meu proprietário https://wa.me/557187645787*\n\n*Obs: O bot somente é adicionado caso você seja administrador do grupo*`
+    `*Administre seu grupo da melhor forma, entretenha seus membros. Alugue o bot no seu grupo*\n*Negocie com meu proprietário https://wa.me/79919841518*\n\n*Obs: O bot somente é adicionado caso você seja administrador do grupo*`
 ]
 
 module.exports = { OriginalOwner, panelOn, menuimg, ownerNumber, ownerNumber,

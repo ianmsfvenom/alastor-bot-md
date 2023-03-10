@@ -1,7 +1,7 @@
 # ✟🔥⃢⃟𝘼𝙇𝘼⃟𝙎𝙏𝙊𝙍 𝘽𝙊⃟𝙏🔥✟
 
 O alastor bot consiste em um bot de whatsapp que utiliza a mais recente api baileys md que está em beta, o que mais destaca no alastor bot é que ele é o primeiro bot brasileiro a ser públicado no github e que possui uma estrutura de código semelhante a do mhankbars para que não seja estranho editar e continuar com os mesmo comandos de instalar o bot.
-<b>Caso esteja interessado nesse bot e queira a base descriptografada entre em contato comigo para podermos negociar [clique aqui](https://wa.me/557187645787) para me chamar no whatsapp.</b>
+<b>Caso esteja interessado nesse bot e queira a base descriptografada entre em contato comigo para podermos negociar [clique aqui](https://wa.me/79919841518) para me chamar no whatsapp.</b>
 
 ----
 
