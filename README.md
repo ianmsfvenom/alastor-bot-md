@@ -189,7 +189,7 @@ Obrigado por nos apoiar!
 
 [Gabriel](wa.me/+5511946817667)
 
-[Thoth](wa.me/+55d11930758170)
+[Thoth](wa.me/+5511930758170)
 
 [Italuh](https://github.com/italuH)
 
