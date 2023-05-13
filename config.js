@@ -166,6 +166,7 @@ const adsShowCount = 8
 
 // Lista de propagandas a ser aparecidas
 const adsArray = [
+    `🛜🔊 Sabia que é possível baixar músicas, álbuns e playlists do spotify pelo alastor bot? Digite o comando ${prefixs[0]}spotify mais o link do álbum, música ou playlist 🔊🛜`,
     '*Você quer ter o alastor bot no seu grupo do whatsapp? Agora é possível! Negocie com meu proprietário clicando no link https://wa.me/557187645787*\n\n*Obs: O bot somente é adicionado caso você seja administrador do grupo*',
     `*Sabia que dá para jogar o jogo friday night funkin e disputar seu recorde contra outros jogadores do bot? Basta da o comando ${prefixs[0]}fnf para saber mais*`,
     `*Baixe playlist e mixes do youtube com o comando ${prefixs[0]}playlist _link da playlist_*`,

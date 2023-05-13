@@ -25,6 +25,7 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋  🎵 𝘼𝙐𝘿𝙄𝙊 🎵
 ┋
+┋ ${p}spotify (album, faixa, playlist)
 ┋ ${p}playlist (playlist yt)
 ┋ ${p}snaptube (name or yt link) 
 ┋ ${p}snap (name or yt link) 
@@ -490,6 +491,7 @@ ${level}
 
 🔈🎵 𝘼𝙐𝘿𝙄𝙊 🎵🔈
 
+*${p}spotify _album, faixa, playlist_*
 *${p}playlist _link da playlist do yt_*
 *${p}snaptube _música ou link do yt_*
 *${p}snap _música ou link do yt_*
@@ -532,6 +534,7 @@ ${level}
 
 
 *💥💣 𝐂𝐀𝐌𝐏𝐎 𝐌𝐈𝐍𝐀𝐃𝐎 💣💥*
+
 *${p}minado _dificuldade_*
 *${p}mina _coordenada_*
 *${p}minatips*
@@ -540,6 +543,7 @@ ${level}
 
 
 *😁😃 𝐃𝐈𝐕𝐄𝐑𝐒𝐀𝐎 😃😁*
+
 *${p}jogodaforca*
 *${p}forca _letra_*
 *${p}resetforca*
@@ -555,6 +559,7 @@ ${level}
 
 
 *🎰🎲 𝐁𝐋𝐀𝐙𝐄 🎲🎰*
+
 *${p}blaze*
 *${p}double*
 *${p}crash*
@@ -563,11 +568,13 @@ ${level}
 
 
 *🪄🧞‍♂️ 𝐀𝐊𝐈𝐍𝐀𝐓𝐎𝐑 🧞‍♂️🪄*
+
 *${p}akinator*
 *${p}resetaki*
 
 
 *🔠↕️ 𝐂𝐀Ç𝐀 𝐏𝐀𝐋𝐀𝐕𝐑𝐀𝐒 ↔️🔠*
+
 *${p}caçareset*
 *${p}caçahelp*
 *${p}cacapalavras _dificuldade_*
@@ -576,6 +583,7 @@ ${level}
 
 
 *🔠➕ 𝐂𝐑𝐔𝐙𝐀𝐃𝐈𝐍𝐇𝐀 ➕🔠*
+
 *${p}cruzaeset*
 *${p}cruzahelp*
 *${p}cruzadinha _dificuldade_*
@@ -584,6 +592,7 @@ ${level}
 
 
 *🔫💥 𝐑𝐎𝐋𝐄𝐓𝐀 𝐑𝐔𝐒𝐒𝐀 💥🔫*
+
 *${p}helproleta*
 *${p}roletarussamed* 
 *${p}roletarussaeasy*
@@ -592,13 +601,16 @@ ${level}
 
 
 *❌#️⃣ 𝐉𝐎𝐆𝐎 𝐃𝐀 𝐕𝐄𝐋𝐇𝐀 #️⃣⭕*
+
 *${p}ttt _dificuldade_*
 *${p}coord _coordenada_*
 *${p}tttme*
 *${p}tttrank* 
 *${p}ttthelp*
 
+
 *🪄🔮 𝐏𝐑𝐄𝐕𝐈𝐒𝐎𝐄𝐒 🔮🪄*
+
 *${p}ship (marcar1) (marcar2)*
 *${p}corno _marcar_*
 *${p}nazista _marcar_*
@@ -666,6 +678,7 @@ ${level}
 
 *🕵️🔎 𝐏𝐄𝐒𝐐𝐔𝐈𝐒𝐀 🔎🕵️*
 
+*${p}spotify _album, faixa, playlist_*
 *${p}goyabu _nome do anime_*
 *${p}wikipedia _mensagem_*
 *${p}gsearch _mensagem_*
@@ -704,6 +717,7 @@ ${level}
 *𝐒𝐞𝐣𝐚 𝐛𝐞𝐦-𝐯𝐢𝐧𝐝𝐨 𝐚𝐨 𝐦𝐞𝐧𝐮 𝐝𝐞 𝐠𝐫𝐮𝐩𝐨𝐬, 𝐚𝐪𝐮𝐢 𝐩𝐨𝐝𝐞 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐫 𝐜𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐪𝐮𝐞 𝐝ê 𝐢𝐧𝐟𝐨𝐫𝐦𝐚çõ𝐞𝐬 𝐝𝐨 𝐠𝐫𝐮𝐩𝐨, 𝐜𝐚𝐬𝐨 𝐛𝐨𝐭 𝐬𝐞𝐣𝐚 𝐮𝐦 𝐚𝐝𝐦 𝐝𝐨 𝐠𝐫𝐮𝐩𝐨, 𝐭𝐚𝐦𝐛é𝐦 𝐩𝐨𝐬𝐬𝐚 𝐟𝐚𝐳𝐞𝐫 𝐚çõ𝐞𝐬 𝐝𝐞 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫*
 
 *🗣️👤 𝐆𝐑𝐔𝐏𝐎𝐒 👤🗣️*
+
 *${p}del _marcar msg_*
 *${p}listfake* 
 *${p}listbr*
@@ -731,6 +745,7 @@ ${level}
 *${p}nsfw _1 ou 0_*
 
 *🚫📄 𝐀𝐍𝐓𝐈 𝐏𝐀𝐋𝐀𝐕𝐑𝐀𝐒 📄🚫*
+
 *${p}addpalavra _palavra_* 
 *${p}rmpalavra _palavra_*
 *${p}antipalavra _1 ou 0_*
@@ -892,6 +907,7 @@ ${level}
 
 
 *🌹🎨 𝐄𝐅𝐄𝐈𝐓𝐎𝐒 🎨🌹*
+
 obs: coloque "me"
 ou marque alguém
 
@@ -907,6 +923,7 @@ ou marque alguém
 
 
 *🌅🖌️ 𝐌𝐎𝐍𝐓𝐀𝐆𝐄𝐍𝐒 🖌️🌅*
+
 obs: coloque "me"
 ou marque alguém
 
