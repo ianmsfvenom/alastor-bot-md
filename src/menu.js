@@ -25,7 +25,7 @@ return `╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅╮
 ┋  🎵 𝘼𝙐𝘿𝙄𝙊 🎵
 ┋
-┋ ${p}spotify (album, faixa, playlist)
+┋ ${p}spotify (album, faixa, playlist, artista, keyword)
 ┋ ${p}playlist (playlist yt)
 ┋ ${p}snaptube (name or yt link) 
 ┋ ${p}snap (name or yt link) 
@@ -491,7 +491,7 @@ ${level}
 
 🔈🎵 𝘼𝙐𝘿𝙄𝙊 🎵🔈
 
-*${p}spotify _album, faixa, playlist_*
+*${p}spotify _link do album, faixa, playlist, artista ou keyword_*
 *${p}playlist _link da playlist do yt_*
 *${p}snaptube _música ou link do yt_*
 *${p}snap _música ou link do yt_*
