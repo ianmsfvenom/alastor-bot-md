@@ -4,10 +4,10 @@
   "main": "index.js",
   "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.4.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@hapi/boom": "^9.1.4",
     "@types/webgl-ext": "^0.0.32",
+    "@whiskeysockets/baileys": "^6.1.0",
     "adm-zip": "^0.5.10",
     "aki-api": "github:ianmsfvenom/aki-api",
     "ascii-box": "^1.1.2",
